@@ -43,5 +43,8 @@ var merge = function(nums1, m, nums2, n) {
     // nums1 = [...nums1, ...nums2].sort((a,b) => a - b)
     nums1.push(...nums2)
     nums1.sort((a, b) => a - b)
+
+    // 另外一种思路
+    // 从num1有效区倒叙比较num1和num2，将较大的值放在num1的最后
 };
 
